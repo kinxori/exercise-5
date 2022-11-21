@@ -1,0 +1,85 @@
+html, body{
+    --o-font-type:'Montserrat', sans-serif; 
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.background {
+    min-width: 100%;
+    min-height: 100%;
+    position:fixed;
+    object-fit: cover;
+    margin: 0;
+    background-color: hsla(0, 0%, 0%, 1);
+}
+.background > img{
+    height: 100%;
+    width: 100%;
+    position: inherit;
+    object-fit: cover;
+    opacity: .2;
+}
+.whole{
+    width: 100%;
+    height:90%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    font-family: var(--o-font-type);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:16px 0px ;
+    position: absolute;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.whole .pfp > img{
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid black;
+}
+hr.separator-1{
+    margin: 0;
+    width: 80%;
+}
+.whole .copy{
+    text-align: center;
+    color:black;
+    margin: 0;
+}
+.whole .copy > h1{
+    font-size: 32px;
+}
+.whole .copy > p{
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr.separator-2{
+    margin: 0;
+    width: 80%;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+}
+.icons i{
+    padding: 16px;
+    background-color:black;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
