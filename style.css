@@ -100,3 +100,26 @@ hr.separator-2{
 .icons i:hover{
     scale: 1.1;
 }
+
+@media (min-width:768px){
+    .whole .pfp > img{
+        width: 180px;
+        height: 180px;
+    }
+    .whole .copy > h1{
+        font-size: 48px;
+    }
+    .whole .copy > p{
+        font-size: 20px;
+        width: 80%;
+    }
+    .icons {
+        gap: 10%;
+        font-size: 20px;
+        width: 60%;
+    }
+    .icons i{
+        height: 20px;
+        width: 20px;
+    }
+}
