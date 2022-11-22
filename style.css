@@ -193,7 +193,7 @@ hr.separator-2{
         text-align: left;
         color:white;
         margin: 0;
-        width: 130%;
+        width: 90%;
     }
     .whole .copy > h1{
         margin: 0;
@@ -215,7 +215,7 @@ hr.separator-2{
         gap: 1.5rem;
         font-size: 32px;
         flex-wrap: wrap;
-        width: 100%;
+        width: 60%;
         justify-content: left;
     }
     .icons i{
@@ -250,7 +250,7 @@ hr.separator-2{
         text-align: left;
         color:white;
         margin: 0;
-        width: 180%;
+        width: 80%;
     }
     .whole .copy > h1{
         margin: 0;
@@ -272,13 +272,29 @@ hr.separator-2{
         gap: 1.5rem;
         font-size: 44px;
         flex-wrap: wrap;
-        width: 80%;
+        width: 50%;
         justify-content: left;
     }
     .icons i{
         padding: 16px;
         height: 44px;
         width: 44px;
+    }
+}
+@media (min-width:1920px){
+    .whole .copy{
+        text-align: left;
+        color:white;
+        margin: 0;
+        width: 60%;
+    }
+    .icons {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 44px;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: left;
     }
 }
 @media (min-width:2560px){
@@ -310,7 +326,7 @@ hr.separator-2{
         text-align: left;
         color:white;
         margin: 0;
-        width: 180%;
+        width: 100%;
     }
     .whole .copy > h1{
         margin: 0;
@@ -333,7 +349,7 @@ hr.separator-2{
         gap: 2rem;
         font-size: 80px;
         flex-wrap: wrap;
-        width: 100%;
+        width: 80%;
         justify-content: left;
     }
     .icons i{
