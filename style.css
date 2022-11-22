@@ -1,33 +1,29 @@
 @keyframes transition-pageload-in{
-    from {
-        opacity: 0 ;
-    }
-    to {
-        opacity: 1 ;
-    }
-}
-@keyframes transition-icons-opacity{
-    from {
-        opacity: 0 ; 
-    }
-    to {
-        opacity: 100;
-    }
+    from { opacity: 0 ;}
+    to { opacity: 1 ease;}
 }
 @keyframes transition-icons-in-scale{
     from {
-        transform: scale(.5);
+        transform: scale(.9);
     }
     to {
-        transform: scale(1);
+        transform: scale(1)ease;
     }
 }
 @keyframes transition-translate-y{
     from {
-        transform: translateY(10px);
+        transform: translateY(8px);
     }
     to {
-        transform: translateY(0px);
+        transform: translateY(0px) ease;
+    }
+}
+@keyframes transition-translate-y-banner{
+    from {
+        transform: translateY(1px);
+    }
+    to {
+        transform: translateY(0px) ease;
     }
 }
 
@@ -38,7 +34,6 @@ html, body{
     height: 100%;
     position: relative;
     animation: transition-pageload-in 1s ease-in-out;
-   
 }
 a{
     text-decoration: none;
@@ -74,7 +69,8 @@ a{
     justify-content: center;
     background-color:black;
     gap: 10%;
-    animation: transition-translate-y 3s ;
+    animation: transition-translate-y-banner 1s ease;
+
 
 }
 .whole .pfp > img{
@@ -83,9 +79,7 @@ a{
     height: 150px;
     border-radius: 50%;
     border: 10px solid hsla(0, 100%, 100%, 1);
-    animation: transition-icons-opacity 2.5s ease;
-
-
+    animation: transition-icons-in-scale 2.4s ease;
 }
 hr.separator-1{
     margin: 0;
@@ -102,7 +96,8 @@ hr.separator-1{
     font-size: 38px;
     padding-bottom: 16px;
     color: hsl(60deg 80% 70%);
-    animation: transition-translate-y 3s ease;
+    animation: transition-translate-y 2s ease-in;
+
 
 
 }
@@ -111,7 +106,8 @@ hr.separator-1{
     width: 80%;
     margin: 0 auto;
     color: hsla(0, 100%, 100%, .5);
-    animation: transition-translate-y 3.2s ease;
+    animation: transition-translate-y 2.2s ease-in;
+
 
 
 }
@@ -130,9 +126,9 @@ hr.separator-2{
     flex-wrap: wrap;
     width: 50%;
     justify-content: center;
-    animation: transition-icons-opacity 3s ease-in-out;
 
 }
+
 .icons i{
     padding: 16px;
     background-color:white;
@@ -144,7 +140,7 @@ hr.separator-2{
     display: flex;
     transition: all .3s ease-in-out;
     cursor: pointer;
-    animation: transition-icons-in-scale 2s ease-in-out;
+    animation: transition-icons-in-scale 2.4s ease-in
 
 }
 .icons i:hover{
@@ -231,6 +227,14 @@ hr.separator-2{
         padding: 16px;
         height: 32px;
         width: 32px;
+    }
+}
+@media (min-width:1080px){
+    .whole .copy{
+        text-align: left;
+        color:white;
+        margin: 0;
+        width: 120%;
     }
 }
 @media (min-width:1440px){
