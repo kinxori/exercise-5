@@ -84,7 +84,6 @@ hr.separator-2{
     flex-wrap: wrap;
     width: 60%;
     justify-content: center;
-
 }
 .icons i{
     padding: 16px;
@@ -100,5 +99,4 @@ hr.separator-2{
 }
 .icons i:hover{
     scale: 1.1;
-
 }
