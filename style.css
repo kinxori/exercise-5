@@ -1,30 +1,115 @@
 @keyframes transition-pageload-in{
     from { opacity: 0 ;}
-    to { opacity: 1 ease;}
+    to { opacity: 1;}
 }
-@keyframes transition-icons-in-scale{
+.transition-pageload-in{
+    animation: transition-pageload-in 1s ease-in-out;
+}
+@keyframes transition-opacity-2{
+    from { opacity: 0 ;}
+    to { opacity: 1;}
+}
+.transition-opacity-2{
+    animation: transition-opacity-2 3s ease;
+    animation-delay: 1s;
+}
+@keyframes transition-scale-in{
     from {
-        transform: scale(.9);
+        transform: scale(.8);
     }
     to {
-        transform: scale(1)ease;
+        transform: scale(1) ease;
     }
+}
+.transition-scale-in{
+    animation: transition-scale-in 1.3s ease; 
 }
 @keyframes transition-translate-y{
     from {
-        transform: translateY(8px);
+        transform: translateY(50px);
     }
     to {
-        transform: translateY(0px) ease;
+        transform: translateY(20px)ease;
     }
 }
-@keyframes transition-translate-y-banner{
+.transition-translate-y{
+    animation: transition-translate-y 1.3s ease ;
+
+}
+@keyframes  opacity-1{
     from {
-        transform: translateY(1px);
+        opacity: 0;
+        transform: scale(.8);
     }
     to {
-        transform: translateY(0px) ease;
+        opacity: 1;
+        transform: scale(1)ease;
     }
+}
+.opacity-1{
+    animation: opacity-1 1.3s ease;
+
+}
+@keyframes  opacity-2{
+    from {
+        opacity: 0;
+        transform: scale(.8);
+
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)ease;
+
+    }
+}
+.opacity-2{
+    animation: opacity-2 1.6s ease;
+}
+@keyframes  opacity-3{
+    from {
+        opacity: 0;
+        transform: scale(.8);
+
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)ease;
+
+    }
+}
+.opacity-3{
+    animation: opacity-3 1.9s ease;
+}
+@keyframes  opacity-4{
+    from {
+        opacity: 0;
+        transform: scale(.8);
+
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)ease;
+
+    }
+}
+.opacity-4{
+    animation: opacity-4 2.2s ease;
+}
+@keyframes  opacity-5{
+    from {
+        
+        opacity: 0;
+        transform: scale(.8);
+
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)ease;
+
+    }
+}
+.opacity-5{
+    animation: opacity-5 2.5s ease;
 }
 
 html, body{
@@ -33,7 +118,6 @@ html, body{
     width: 100%;
     height: 100%;
     position: relative;
-    animation: transition-pageload-in 1s ease-in-out;
 }
 a{
     text-decoration: none;
@@ -69,9 +153,6 @@ a{
     justify-content: center;
     background-color:black;
     gap: 10%;
-    animation: transition-translate-y-banner 1s ease;
-
-
 }
 .whole .pfp > img{
     margin: 0;
@@ -79,7 +160,6 @@ a{
     height: 150px;
     border-radius: 50%;
     border: 10px solid hsla(0, 100%, 100%, 1);
-    animation: transition-icons-in-scale 2.4s ease;
 }
 hr.separator-1{
     margin: 0;
@@ -96,7 +176,6 @@ hr.separator-1{
     font-size: 38px;
     padding-bottom: 16px;
     color: hsl(60deg 80% 70%);
-    animation: transition-translate-y 2s ease-in;
 
 
 
@@ -106,7 +185,6 @@ hr.separator-1{
     width: 80%;
     margin: 0 auto;
     color: hsla(0, 100%, 100%, .5);
-    animation: transition-translate-y 2.2s ease-in;
 }
 hr.separator-2{
     margin: 0;
@@ -136,7 +214,6 @@ hr.separator-2{
     display: flex;
     transition: all .3s ease-in-out;
     cursor: pointer;
-    animation: transition-icons-in-scale 2.4s ease-in
 }
 .icons i:hover{
     scale: 1.1;
