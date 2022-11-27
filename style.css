@@ -29,14 +29,14 @@
     }
 @keyframes transition-translate-y{
         from {
-            transform: translateY(50px);
+            transform: translateY(25px);
         }
         to {
-            transform: translateY(20px)ease;
+            transform: translateY(0px)ease;
         }
     }
     .transition-translate-y{
-        animation: transition-translate-y 1.3s ease ;
+        animation: transition-translate-y 1.3s;
     
     }
 
