@@ -95,11 +95,11 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:16px 0px ;
+    margin:1.8rem 0px ;
     position: absolute;
     justify-content: center;
     background-color:black;
-    gap: 10%;
+    gap: 8%;
 }
 .whole .pfp > img{
     margin: 0;
@@ -143,7 +143,7 @@ hr.separator-2{
     color: black;
     font-size: 16px;
     flex-wrap: wrap;
-    width: 50%;
+    width: 55%;
     justify-content: center;
     opacity: 1;
 
@@ -172,7 +172,7 @@ hr.separator-2{
 
 
 
-@media (min-width:768px){
+@media (min-width:500px){
     .whole .pfp > img{
         width: 180px;
         height: 180px;
@@ -185,9 +185,9 @@ hr.separator-2{
         width: 80%;
     }
     .icons {
-        gap: 10%;
+        gap: 5%;
         font-size: 20px;
-        width: 60%;
+        width: 75%;
     }
     .icons i{
         height: 20px;
@@ -198,7 +198,7 @@ hr.separator-2{
 /* Laptop */ 
 
 
-@media (min-width:1024px){
+/* @media (min-width:960px){
     .whole{
         width: 100%;
         height:35%;
@@ -216,11 +216,11 @@ hr.separator-2{
         padding: 0px;
     }
     .whole .pfp{
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
     .whole .pfp > img{
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
     hr.separator-1{
         width: 0;
@@ -230,11 +230,11 @@ hr.separator-2{
         text-align: left;
         color:white;
         margin: 0;
-        width: 80%;
+        width: 90%;
     }
     .whole .copy > h1{
         margin: 0;
-        font-size: 56px;
+        font-size: 46px;
         padding-bottom: 16px;
         width: 100%;
     }
@@ -249,23 +249,23 @@ hr.separator-2{
     }
     .icons {
         display: flex;
-        gap: 1.5rem;
-        font-size: 32px;
+        gap: 1rem;
+        font-size: 24px;
         flex-wrap: wrap;
-        width: 60%;
+        width: 65%;
         justify-content: left;
     }
     .icons i{
         padding: 16px;
-        height: 32px;
-        width: 32px;
+        height: 22px;
+        width: 22px;
     }
-}
+} 
 
 /* Desktop */ 
 
 
-@media (min-width:1440px){
+ @media (min-width:1080px){
     .whole{
         width: 100%;
         height:40%;
@@ -273,34 +273,39 @@ hr.separator-2{
         display: flex;
         flex-direction: row;
         align-items:center;
-        margin: auto 0;
-        position: absolute;
-        justify-content: center;
-        gap: 5%;
-        padding: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0px 0rem;
+        gap: 3%;
+        margin: 0;
+       
     }
     .whole .pfp{
-        padding-left: 4rem;
+        margin: 0;
     }
     .whole .pfp > img{
         width:220px;
         height: 220px;
+        margin: 0;
+
     }
     hr.separator-1{
         width: 0;
         height: 60%;
+        margin: 0;
+
     }
     .whole .copy{
         text-align: left;
         color:white;
         margin: 0;
-        width: 80%;
+        width: 35%;
+        
     }
     .whole .copy > h1{
         margin: 0;
         font-size: 68px;
         padding-bottom: 16px;
-        width: 100%;
     }
     .whole .copy > p{
         font-size: 28px;
@@ -313,23 +318,23 @@ hr.separator-2{
     }
     .icons {
         display: flex;
-        gap: 1.5rem;
-        font-size: 44px;
+        gap: 1rem;
+        font-size: 34px;
         flex-wrap: wrap;
-        width: 50%;
         justify-content: left;
+        width: 250px;
     }
     .icons i{
         padding: 16px;
-        height: 44px;
-        width: 44px;
+        height: 34px;
+        width: 34px;
     }
 }
 
 /* Desktop FHD */ 
 
 
-@media (min-width:1920px){
+/* @media (min-width:1920px){
     .whole{
         width: 100%;
         height:40%;
@@ -362,7 +367,7 @@ hr.separator-2{
         width: 50%;
         justify-content: left;
     }
-}
+} */
 
 /* Desktop UHD */ 
 
@@ -370,7 +375,7 @@ hr.separator-2{
 @media (min-width:2560px){
     .whole{
         width: 100%;
-        height: 50%;
+        height: 60%;
         overflow: hidden;
         display: flex;
         flex-direction: row;
@@ -379,16 +384,14 @@ hr.separator-2{
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
-        justify-content: center;
-        gap: 5%;
-        padding: 0px 0rem;
+        gap: 3%;
     }
     .whole .pfp{
         padding-left: 6rem;
     }
     .whole .pfp > img{
-        width: 550px;
-        height: 550px;
+        width: 450px;
+        height: 450px;
     }
     hr.separator-1{
         width: 0;
@@ -420,13 +423,12 @@ hr.separator-2{
     .icons {
         display: flex;
         gap: 2rem;
-        font-size: 80px;
+        font-size: 60px;
         flex-wrap: wrap;
-        width: 80%;
+        width: 1000px;
         justify-content: left;
     }
     .icons i{
-        padding: px;
-        height: 120px;
-        width: 120px;
+        height: 80px;
+        width: 80px;
     }
